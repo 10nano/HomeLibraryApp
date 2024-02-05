@@ -1,6 +1,6 @@
 ﻿namespace HomeLibraryApp.Entities
 {
-    public class CDroms : EntityBase
+    public class CDrom : EntityBase
     {
         public long Id { get; set; }
         public string? Title { get; set; }
