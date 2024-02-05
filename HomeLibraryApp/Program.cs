@@ -2,26 +2,26 @@
 using HomeLibraryApp.Entities;
 using HomeLibraryApp.Repositories;
 
-var bookRepository = new SqlRepository<Book>(new HomeLibraryAppDbContext());
+var bookRepository = new SqlRepository<Books>(new HomeLibraryAppDbContext());
 
 AddBooks(bookRepository);
 AddeBooks(bookRepository);
 WriteAllToConsole(bookRepository);
 
-static void AddBooks(IRepository<Book> bookRepository)
+static void AddBooks(IRepository<Books> bookRepository)
 {
-    bookRepository.Add(new Book { Title = "Mały Książę" });
-    bookRepository.Add(new Book { Title = "Cień wiatru" });
-    bookRepository.Add(new Book { Title = "Władca Pierścieni" });
-    bookRepository.Add(new Book { Title = "Z goryczy soli moja radość" });
+    bookRepository.Add(new Books { Title = "Mały Książę" });
+    bookRepository.Add(new Books { Title = "Cień wiatru" });
+    bookRepository.Add(new Books { Title = "Władca Pierścieni" });
+    bookRepository.Add(new Books { Title = "Z goryczy soli moja radość" });
     bookRepository.Save();
 }
 
-static void AddeBooks(IWriteRepository<EBook> ebookRepository)
+static void AddeBooks(IWriteRepository<EBooks> ebookRepository)
 {
-    ebookRepository.Add(new EBook { Title = "Atomowe nawyki" });
-    ebookRepository.Add(new EBook { Title = "Życie Pi" });
-    ebookRepository.Add(new EBook { Title = "Z goryczy soli moja radość" });
+    ebookRepository.Add(new EBooks { Title = "Atomowe nawyki" });
+    ebookRepository.Add(new EBooks { Title = "Życie Pi" });
+    ebookRepository.Add(new EBooks { Title = "Z goryczy soli moja radość" });
     ebookRepository.Save();
 }
 

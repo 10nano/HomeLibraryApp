@@ -1,6 +1,6 @@
 ﻿namespace HomeLibraryApp.Entities
 {
-    public class EBook : Book
+    public class EBooks : Books
     {
         public override string ToString() => base.ToString() + " (E-Book)";
     }

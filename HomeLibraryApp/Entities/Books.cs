@@ -1,6 +1,6 @@
 ﻿namespace HomeLibraryApp.Entities
 {
-    public class Book : EntityBase 
+    public class Books : EntityBase 
     {
         public long Id { get; set; } 
         public string? Title { get; set; }

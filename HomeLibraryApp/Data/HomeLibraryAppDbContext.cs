@@ -5,9 +5,9 @@ namespace HomeLibraryApp.Data
 {
     internal class HomeLibraryAppDbContext : DbContext
     {
-        public DbSet<Book> Book => Set<Book>();
+        public DbSet<Books> Book => Set<Books>();
 
-        public DbSet<CDrom> Crom => Set<CDrom>();
+        public DbSet<CDroms> Crom => Set<CDroms>();
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
